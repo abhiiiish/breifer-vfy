@@ -41,6 +41,14 @@ def home():
         return render_template('index.html', descriptions=descriptions)
     else:
         return render_template('index.html')
+    
+ @app.route('/privacy.html')
+def privacy_policy():
+    return render_template('privacy.html')
+
+@app.route('/terms.html')
+def terms_of_service():
+    return render_template('terms.html')
 
 @app.errorhandler(Exception)
 def handle_error(e):
