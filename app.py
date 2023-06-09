@@ -42,7 +42,7 @@ def home():
     else:
         return render_template('index.html')
     
- @app.route('/privacy.html')
+@app.route('/privacy.html')
 def privacy_policy():
     return render_template('privacy.html')
 
